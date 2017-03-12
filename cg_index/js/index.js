@@ -52,7 +52,7 @@ $(function () {
             url: "http://139.199.157.195:9090/api/getindexmenu",
             type: "get",
             dateType: "json",
-            timeout: 3000,
+            timeout: 10000,
             success: function (data) {
                 var html = template("mmbMenu", data);
                 dom.html(html);
@@ -68,7 +68,7 @@ $(function () {
             url: "http://139.199.157.195:9090/api/getmoneyctrl",
             type: "get",
             dataType: "json",
-            timeout: 3000,
+            timeout: 10000,
             success: function (data) {
                 var html = template('listDiscount', data);
                 dom.html(html);
